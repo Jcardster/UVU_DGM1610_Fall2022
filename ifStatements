@@ -1,0 +1,34 @@
+string time = "late";
+boolean sunny = false;
+boolean cloudy = false;
+int year == 2022;
+boolean tired = true;
+
+if(time = "late")
+{
+  Console.Write("I made this late at night");
+}
+
+if(sunny = false)
+{
+  Console.Write("It wasn't sunny when I wrote this");
+}
+
+if(cloudy = false)
+{
+  Console.Write("I could see the sky writing this");
+}
+
+if(year != 2022)
+{
+  Console.Write("Did we already pass 2022);
+}
+else()
+{
+  Console.write("It's still 2022");
+}
+
+if(tired = true)
+{
+  Console.Write("The boolean answer to this variable will always be " + tired);
+}
