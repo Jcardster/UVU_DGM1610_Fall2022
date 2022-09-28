@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3778445384035399375}
   - component: {fileID: 3778445384035399372}
   - component: {fileID: 3778445384035399373}
+  - component: {fileID: 694656706216733548}
   m_Layer: 0
   m_Name: LaserBolt
   m_TagString: Untagged
@@ -92,12 +93,24 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3778445384035399363}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.69
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &694656706216733548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3778445384035399363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 305332fb8b966664c93f77634817782a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3778445384426891594
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,6 +216,7 @@ GameObject:
   - component: {fileID: 3778445384810150919}
   - component: {fileID: 3778445384810150916}
   - component: {fileID: -5515282395915385655}
+  - component: {fileID: -5705592517576891119}
   m_Layer: 0
   m_Name: LazerBolt
   m_TagString: Untagged
@@ -254,3 +268,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topBounds: 30
   lowerBounds: -10
+--- !u!114 &-5705592517576891119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3778445384810150917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 305332fb8b966664c93f77634817782a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
