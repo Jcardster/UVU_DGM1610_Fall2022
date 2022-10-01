@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 2212404096852984602}
   - component: {fileID: 2212404096852984603}
   - component: {fileID: 2212404096852984598}
+  - component: {fileID: 7809784258645649976}
   m_Layer: 0
   m_Name: UFODestoyer
   m_TagString: Untagged
@@ -297,6 +298,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7809784258645649976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2212404096852984600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6513346ecc670f942bb4b6aacf4e5877, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topBounds: 30
+  lowerBounds: -10
 --- !u!1 &2212404097239885408
 GameObject:
   m_ObjectHideFlags: 0
