@@ -8,9 +8,16 @@ public class DestroyOutOfBounds : MonoBehaviour
     public float topBounds = 30.0f;
     public float lowerBounds = -10.0f;
 
+    private ScoreManager scoreManager;
+    private DetectCollision detectCollision;
 
 
-    // Start is called before the first frame update
+    void Start()
+    {
+        scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
+        detectCollision = GetComponent<DetectCollision>();
+    }
+
     void SAwake()
     {
         Time.timeScale = 1;
@@ -26,9 +33,10 @@ public class DestroyOutOfBounds : MonoBehaviour
 
         if(transform.position.z < lowerBounds)
         {
-            Debug.Log("Game Over!");
+            scoreManager.DecreaseScore(detectCollision.scoreToGive); //Decrease score when a ship passes
+            //Debug.Log("Game Over!");
             Destroy(gameObject);
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
         }
 
 

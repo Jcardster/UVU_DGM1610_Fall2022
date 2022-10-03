@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1534921332438838818}
   - component: {fileID: 1534921332438838825}
   - component: {fileID: 6906446495220105474}
+  - component: {fileID: 7704673928524401118}
   m_Layer: 0
   m_Name: UFOScout
   m_TagString: Untagged
@@ -144,6 +145,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topBounds: 30
   lowerBounds: -10
+--- !u!114 &7704673928524401118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534921332438838819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 305332fb8b966664c93f77634817782a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreManager: {fileID: 0}
+  scoreToGive: 200
 --- !u!1 &1534921333071313517
 GameObject:
   m_ObjectHideFlags: 0

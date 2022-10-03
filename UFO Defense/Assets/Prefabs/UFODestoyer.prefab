@@ -181,6 +181,7 @@ GameObject:
   - component: {fileID: 2212404096852984603}
   - component: {fileID: 2212404096852984598}
   - component: {fileID: 7809784258645649976}
+  - component: {fileID: -6239949073041850054}
   m_Layer: 0
   m_Name: UFODestoyer
   m_TagString: Untagged
@@ -312,6 +313,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topBounds: 30
   lowerBounds: -10
+--- !u!114 &-6239949073041850054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2212404096852984600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 305332fb8b966664c93f77634817782a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreManager: {fileID: 0}
+  scoreToGive: 50
 --- !u!1 &2212404097239885408
 GameObject:
   m_ObjectHideFlags: 0
