@@ -24,8 +24,7 @@ public class EnemySpawnManager : MonoBehaviour
     void SpawnRandomEnemy()
     {
         Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ); //Generate a position from which to spawn enemies
-
-        int enemyIndex = Random.Range(0, enemyPrefabs.Length);
-        Instantiate(enemyPrefabs[enemyIndex], spawnPos, enemyPrefabs[enemyIndex].transform.rotation);
+        int enemyIndex = Random.Range(0, enemyPrefabs.Length); //Pick a random UFO
+        Instantiate(enemyPrefabs[enemyIndex], spawnPos, enemyPrefabs[enemyIndex].transform.rotation); //Spawn the chosen UFO in the chosen position
     }
 }
