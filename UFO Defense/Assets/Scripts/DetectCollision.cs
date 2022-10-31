@@ -8,6 +8,8 @@ public class DetectCollision : MonoBehaviour
     private ScoreManager scoreManager; //Variable to hold the reference to the ScoreManager
     public int scoreToGive;
 
+    public ParticleSystem explosionParticle;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,7 @@ public class DetectCollision : MonoBehaviour
         scoreManager.IncreaseScore(scoreToGive); //Increase score amount by scoreToGive
         Destroy(other.gameObject); //Destroy the other game object
         Destroy(gameObject); //Destroy this game object
+        explosionParticle.Play();
         
     }
 

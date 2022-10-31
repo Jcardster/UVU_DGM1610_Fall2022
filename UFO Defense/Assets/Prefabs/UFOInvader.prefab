@@ -273,3 +273,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreToGive: 100
+  explosionParticle: {fileID: 7599334457583521731, guid: 1e35147a2c78c914d8ee6e3ee94b651c, type: 3}
