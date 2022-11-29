@@ -18,12 +18,17 @@ public class DetectCollision : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-
+        Explosion();
         scoreManager.IncreaseScore(scoreToGive); //Increase score amount by scoreToGive
         Destroy(other.gameObject); //Destroy the other game object
-        Destroy(gameObject); //Destroy this game object
-        explosionParticle.Play();
+        Destroy(gameObject); //Destroy this game object     
         
+    }
+
+    void Explosion()
+    {
+        Instantiate(explosionParticle, transform.position, transform.rotation);
+
     }
 
 }
