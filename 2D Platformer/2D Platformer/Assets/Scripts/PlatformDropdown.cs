@@ -24,7 +24,7 @@ public class PlatformDropdown : MonoBehaviour
             waitTime = 0.5f;
         }
      //Flipping effector down
-     if(Input.GetKey(KeyCode.DownArrow))
+     if(Input.GetKey(KeyCode.S))
         {
             if(waitTime <=0)//if wait time is reduced to zero flip effector down
             {

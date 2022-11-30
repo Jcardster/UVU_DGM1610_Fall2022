@@ -22,4 +22,6 @@ public class GhostEnemy : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+   
 }
