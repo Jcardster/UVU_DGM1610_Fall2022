@@ -39,7 +39,7 @@ public class PlayerController2D : MonoBehaviour
         // If the player is moving left but facing right flip the player left
         else if(isFacingRight && moveInput < 0)
         {
-            FlipPlayer();
+            FlipPlayer();            
         }
     }
 
