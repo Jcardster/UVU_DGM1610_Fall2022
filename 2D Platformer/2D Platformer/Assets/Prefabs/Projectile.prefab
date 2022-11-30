@@ -138,4 +138,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   damage: 10
-  rb: {fileID: 0}
+  rb: {fileID: 214084018489072249}
+  facingRight: 1
