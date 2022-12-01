@@ -61,6 +61,14 @@ public class PlayerController2D : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Collectible"))
+        {
+            Destroy(other.gameObject);
+        }
+    }
+
     void FlipPlayer()
     {
         isFacingRight = !isFacingRight;
