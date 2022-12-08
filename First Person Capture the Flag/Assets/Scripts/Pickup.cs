@@ -15,7 +15,7 @@ public class Pickup : MonoBehaviour
     private bool bobbingUp;
     private Vector3 startPos;
     //Get audio for pickup
-    public AudioClip pickupSFX;
+    //public AudioClip pickupSFX;
 
     // Start is called before the first frame update
     void Start()

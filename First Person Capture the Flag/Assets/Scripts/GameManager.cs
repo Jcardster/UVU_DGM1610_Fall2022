@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+
     [Header("Flags Stats")]
     public bool hasFlag;
     public bool flagPlaced;

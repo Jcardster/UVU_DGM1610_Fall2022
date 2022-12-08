@@ -14,11 +14,15 @@ public class PlayerController : MonoBehaviour
     private float rotX;
     private Camera camera;
     private Rigidbody rb;
+    [Header("Player Stats")]
+    public int maxHp;
+    public int curHp;
     //private Weapon weapon;
 
     void Awake()
     {
         //weapon = GetComponent<Weapon>();
+        curHp = maxHp;
     }
 
     // Start is called before the first frame update
@@ -36,12 +40,12 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        //curHp -= damage;
+        curHp -= damage;
 
-        //if(curHp <= 0)
-        //{
-            //Die();
-        //}
+        if(curHp <= 0)
+        {
+            Die();
+        }
         //GameUI.instance.UpdateHealthBar(curHp, maxHp);
     }
 
@@ -49,6 +53,7 @@ public class PlayerController : MonoBehaviour
     {
         //GameManager.instance.LoseGame();
         Debug.Log("Player had died! Game Over");
+        Time.timeScale = 0;
     }
 
     // Update is called once per frame

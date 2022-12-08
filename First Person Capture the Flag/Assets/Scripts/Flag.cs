@@ -8,7 +8,6 @@ public class Flag : MonoBehaviour
     private GameManager gm;
     private Renderer rend;
 
-
     // Start is called before the first frame update
     void Start()
     {
